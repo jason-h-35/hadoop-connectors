@@ -316,7 +316,7 @@ permissions (not authorized) to execute these requests.
     underlying channel will not open a data stream until `read()` method is
     called so that streams can seek to nonzero file positions without incurring
     an extra stream creation. This is necessary to technically match the
-    expected behavior of HCFS, but incurs extra latency overhead on `open()`
+    expected behavior of HDFS, but incurs extra latency overhead on `open()`
     call. If the client code can handle late failures on not-found errors, or
     has independently already ensured that a file exists before calling open(),
     then set this property to false for more efficient reads.
